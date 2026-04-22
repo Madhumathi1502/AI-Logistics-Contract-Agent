@@ -1,141 +1,60 @@
 AI Agent for Logistics Contract Intelligence
-Overview
+📌 Overview
 
-Logistics and e-commerce operations rely heavily on carrier contracts (SLAs) that define rules like deadlines, penalties, and obligations. However, these contracts are often buried in long PDFs, making it difficult for teams to track and act on them in time.
+ContractIQ is an AI-powered system that reads and understands logistics carrier contracts (SLAs) from PDFs and helps teams track deadlines, obligations, and risks in real time.
 
-It is an AI-powered agent system that reads, understands, and actively manages contract obligations — helping logistics teams avoid missed deadlines, penalties, and operational risks.
+🎯 Problem
 
-🎯 Problem Statement
-
-Helping logistics teams stay on top of carrier contracts and shipping rules by:
-
-Extracting critical rules from unstructured documents
-Tracking obligations across multiple carriers
-Alerting users before deadlines are missed
-Assisting in taking timely action
+Logistics contracts contain critical rules (deadlines, penalties, claims), but they are buried in long documents. Teams often miss key actions, leading to losses.
 
 💡 Solution
 
-ContractIQ uses AI agents + Retrieval-Augmented Generation (RAG) to:
+ContractIQ uses AI Agents + RAG to:
 
-📄 Parse and understand contract PDFs
-🧠 Extract structured rules (deadlines, penalties, conditions)
-🔍 Answer user queries about contracts
-⏰ Track and notify upcoming obligations
-⚠️ Detect risks like missed claim deadlines
+📄 Extract rules from contract PDFs
+🔍 Answer contract-related queries
+⏰ Track deadlines and obligations
+⚠️ Alert risks and suggest actions
 🧠 Key Features
-📄 Contract Understanding
-Upload carrier SLA documents (PDF)
-Extract:
-Claim filing deadlines
-Packaging requirements
-Liability limits
-Penalty clauses
-💬 Intelligent Query System
-Ask questions like:
-“What is the claim deadline for Carrier A?”
-“What happens if delivery is delayed?”
-⏰ Smart Alerts
-Deadline reminders
-Risk notifications
-Action suggestions
-🔄 Multi-Carrier Management
-Handles multiple contracts simultaneously
-Tracks obligations per shipment and carrier
-⚠️ Conflict Detection (Optional Advanced Feature)
-Identifies conflicting rules between different carriers
+Contract PDF parsing & information extraction
+AI-powered query system (chat interface)
+Deadline tracking & alerts
+Multi-carrier contract management
+Risk detection (missed claims, penalties)
 🏗️ Tech Stack
-
-Frontend:
-
-React / HTML / CSS (based on your implementation)
-
-Backend:
-
-Node.js / Python
-
-AI & NLP:
-
-LLM (GPT / Gemini / Claude / Llama)
-RAG Pipeline
-Embeddings + Vector Database
-
-Other Tools:
-
-PDF Parsing Libraries (PyMuPDF / pdfplumber)
-LangChain / CrewAI / LangGraph (for agent orchestration)
-⚙️ System Architecture
-PDF Upload Module
-Text Extraction Engine
-Information Structuring Layer
-Vector Database (for RAG)
-AI Agent Layer (Reason + Act)
-User Interface (Chat / Dashboard / Alerts)
-🧪 How It Works
+Frontend: Streamlit
+Backend: Python (FastAPI)
+AI: LLM + RAG
+Tools: PDF parsing, vector database
+⚙️ How It Works
 Upload contract PDF
-System extracts and processes text
-Important rules are structured and stored
-User interacts via chat/dashboard
-AI agent:
-Retrieves relevant info
-Reasons about obligations
-Provides actionable insights
-📊 Example Use Case
+System extracts and structures data
+AI agent answers queries
+Alerts for deadlines & risks
+📊 Example
 
-👉 Scenario: A shipment is damaged
+Scenario: Damaged shipment
+→ Identifies contract
+→ Checks claim deadline
+→ Alerts user
+→ Suggests next action
 
-ContractIQ will:
-
-Identify the correct carrier contract
-Check claim filing deadline
-Alert if deadline is near
-Suggest next steps
-🚀 Getting Started
- Clone the repository
-
-
- Navigate to project folder
-cd contractiq
-
- Install dependencies
-npm install
- or
+🚀 Run Locally
+# Install dependencies
 pip install -r requirements.txt
 
- Run the project
+# Run backend
+python -m backend.main
 
-npm run dev
- or
-python app.py
-
-
-
-
-📁 Project Structure
-contractiq/
-│── frontend/
-│── backend/
-│── data/
-│── models/
-│── utils/
-│── README.md
- Key Concepts Used
-Retrieval-Augmented Generation (RAG)
-AI Agent Reasoning
-PDF Parsing
-Information Extraction
-Semantic Search
-
-🏆 Hackathon Details
-Theme: AI for Logistics & Contract Intelligence
-Problem Statement: Carrier Contract Management
-Difficulty Level: Medium
-🔮 Future Enhancements
-   Dashboard visualization
-   Calendar integration for deadlines
-   Email / WhatsApp alerts
-   Autonomous action agents
-   Analytics for contract performance
-
-
-⭐ If you like this project, give it a star!
+# Run frontend
+cd frontend
+streamlit run app.py
+📁 Structure
+backend/
+frontend/
+data/
+demo_files/
+🏆 Hackathon
+Theme: AI for Logistics
+Focus: Contract Intelligence using AI Agents
+⭐ Star this repo if you like it!
