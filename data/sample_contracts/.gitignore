@@ -1,0 +1,61 @@
+# 🔹 Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+# 🔹 Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# 🔹 Environment variables (VERY IMPORTANT)
+.env
+
+# 🔹 Logs
+*.log
+
+# 🔹 OS files
+.DS_Store
+Thumbs.db
+
+# 🔹 VS Code settings
+.vscode/
+
+# 🔹 Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# 🔹 Streamlit
+.streamlit/
+
+# 🔹 Database files (if any)
+*.db
+*.sqlite3
+
+# 🔹 Generated / temporary files
+generated_contracts/
+*.tmp
+
+# 🔹 Large files / models (avoid pushing)
+*.pt
+*.pth
+*.h5
+
+# 🔹 PDF files (optional - remove if needed)
+*.pdf
+
+# 🔹 Node modules (if any frontend uses npm)
+node_modules/
+
+# 🔹 Build folders
+dist/
+build/
+
+# 🔹 Coverage reports
+.coverage
+htmlcov/
+
+# 🔹 Misc
+*.bak
+*.swp
