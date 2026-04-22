@@ -51,12 +51,19 @@ python -m backend.main
 # Run frontend
 cd frontend
 streamlit run app.py
+
+
+
 📁 Structure
 backend/
 frontend/
 data/
 demo_files/
+
+
 🏆 Hackathon
 Theme: AI for Logistics
 Focus: Contract Intelligence using AI Agents
+
+
 ⭐ Star this repo if you like it!
