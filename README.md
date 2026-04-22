@@ -91,20 +91,20 @@ Check claim filing deadline
 Alert if deadline is near
 Suggest next steps
 🚀 Getting Started
-# Clone the repository
-git clone https://github.com/your-username/contractiq.git
+ Clone the repository
 
-# Navigate to project folder
+
+ Navigate to project folder
 cd contractiq
 
-# Install dependencies
+ Install dependencies
 npm install
-# or
+ or
 pip install -r requirements.txt
 
-# Run the project
+ Run the project
 npm run dev
-# or
+ or
 python app.py
 📁 Project Structure
 contractiq/
@@ -114,7 +114,7 @@ contractiq/
 │── models/
 │── utils/
 │── README.md
-🧠 Key Concepts Used
+ Key Concepts Used
 Retrieval-Augmented Generation (RAG)
 AI Agent Reasoning
 PDF Parsing
