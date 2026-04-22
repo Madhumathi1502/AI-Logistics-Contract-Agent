@@ -1,9 +1,9 @@
 AI Agent for Logistics Contract Intelligence
 📌 Overview
 
-ContractIQ is an AI-powered system that reads and understands logistics carrier contracts (SLAs) from PDFs and helps teams track deadlines, obligations, and risks in real time.
+It is an AI-powered system that reads and understands logistics carrier contracts (SLAs) from PDFs and helps teams track deadlines, obligations, and risks in real time.
 
-🎯 Problem
+Problem Satement
 
 Logistics contracts contain critical rules (deadlines, penalties, claims), but they are buried in long documents. Teams often miss key actions, leading to losses.
 
@@ -21,6 +21,8 @@ AI-powered query system (chat interface)
 Deadline tracking & alerts
 Multi-carrier contract management
 Risk detection (missed claims, penalties)
+
+
 🏗️ Tech Stack
 Frontend: Streamlit
 Backend: Python (FastAPI)
