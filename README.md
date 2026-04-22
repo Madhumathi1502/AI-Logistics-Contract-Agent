@@ -103,9 +103,14 @@ npm install
 pip install -r requirements.txt
 
  Run the project
+
 npm run dev
  or
 python app.py
+
+
+
+
 📁 Project Structure
 contractiq/
 │── frontend/
